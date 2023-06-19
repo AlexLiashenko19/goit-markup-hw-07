@@ -438,16 +438,12 @@ body {
   color: #434455;
 }
 
-/* .second-item {
-  margin: 0;
-} */
-
 /* third section */
 .section-third {
   padding-bottom: 120px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1158px) {
   .section-third {
     display: none;
   }
@@ -882,7 +878,7 @@ body {
 .section-titl {
   margin-bottom: 8px;
 
-  font-weight: 700;
+  font-weight: 500;
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -1336,7 +1332,7 @@ body {
 
 .messenger-menu {
   display: flex;
-  gap: 56px;
+  justify-content: space-between;
 }
 
 

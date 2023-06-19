@@ -16,7 +16,9 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" 
+    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width:767.9px)" />
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width:768px) and (max-width:1157.9px)" />
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width:1158px)" />
   </head>
   <body>
     <header class="headick">
@@ -157,13 +159,17 @@
           <h2 class="section-tit">Our Team</h2>
           <ul class="team-container">
             <li class="list-img">
-              <img
-              srcset="./images/Team/img_264.jpg 1x, ./images/Team/img_528.jpg 2x"
-                src="./images/Team/img_264-1.jpg"
-                alt="Mark Guerrero"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width: 768px)" srcset="
+                                ./images/Team/img_264tab-3.jpg 1x, 
+                                ./images/Team/img_528tab-3.jpg 2x" />
+              
+                <source media="(max-width: 767px)" srcset="
+                              ./images/Team/img_264.jpg 1x, 
+                              ./images/Team/img_528.jpg 2x" />
+              
+                <img src="./images/Team/img_528tab-3.jpg" alt="Mark Guerrero" width="264" height="260" />
+              </picture>
               <div class="card-container">
                 <h3 class="section-title">Mark Guerrero</h3>
                 <p class="p-color">Product Designer</p>
@@ -200,13 +206,25 @@
               </div>
             </li>
             <li class="list-img">
+              <picture>
+                <source media="(min-width: 768px)" 
+                srcset="
+                  ./images/Team/img_264tab-2.jpg 1x, 
+                  ./images/Team/img_528tab-2.jpg 2x"
+                   />
+
+                <source media="(max-width: 767px)" srcset="
+                ./images/Team/img_264-1.jpg 1x, 
+                ./images/Team/img_528-1.jpg 2x" 
+                />
+              
               <img
-              srcset="./images/Team/img_264-1.jpg 1x, ./images/Team/img_528-1.jpg 2x"
-                src="./images/Team/Tom-Ford.jpg"
+                src="./images/Team/img_264-1.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
               />
+              </picture>
               <div class="card-container">
                 <h3 class="section-title">Tom Ford</h3>
                 <p class="p-color">Frontend Developer</p>
@@ -243,13 +261,17 @@
               </div>
             </li>
             <li class="list-img">
-              <img
-              srcset="./images/Team/img_264-2.jpg 1x, ./images/Team/img_528-2.jpg 2x"
-                src="./images/Team/Camila-Garcia.jpg"
-                alt="Camila Garcia"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width: 768px)" srcset="
+                                              ./images/Team/img_264tab-1.jpg 1x, 
+                                              ./images/Team/img_528tab-1.jpg 2x" />
+              
+                <source media="(max-width: 767px)" srcset="
+                                            ./images/Team/img_264-2.jpg 1x, 
+                                            ./images/Team/img_528-2.jpg 2x" />
+              
+                <img src="./images/Team/img_528tab-1.jpg" alt="Camila Garcia" width="264" height="260" />
+              </picture>
               <div class="card-container">
                 <h3 class="section-title">Camila Garcia</h3>
                 <p class="p-color">Marketing</p>
@@ -286,13 +308,17 @@
               </div>
             </li>
             <li class="list-img">
-              <img
-              srcset="./images/Team/img_264-3.jpg 1x, ./images/Team/img_528-3.jpg 2x"
-                src="./images/Team/Daniel-Wilson.jpg"
-                alt="Daniel Wilson"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width: 768px)" srcset="
+                  ./images/Team/img_264tab.jpg 1x, 
+                  ./images/Team/img_528tab.jpg 2x" />
+              
+                <source media="(max-width: 767px)" srcset="
+                  ./images/Team/img_264-3.jpg 1x, 
+                  ./images/Team/img_528-3.jpg 2x" />
+              
+                <img src="./images/Team/img_528tab-1.jpg" alt="Daniel Wilson" width="264" height="260" />
+              </picture>
               <div class="card-container">
                 <h3 class="section-title">Daniel Wilson</h3>
                 <p class="p-color">UI Designer</p>
