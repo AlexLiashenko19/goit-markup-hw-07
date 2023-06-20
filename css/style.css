@@ -196,13 +196,36 @@ body {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .auth-nav {
-    display: block;
-  }
+.info-contact {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 
+  color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (max-width: 1157px) {
   .info-contact:first-child {
     margin-bottom: 12px;
+  }
+
+  .info-contact {
+    font-size: 12px;
+
+    line-height: 1.1;
+
+    letter-spacing: 0.04em;
+
+    color: #434455;
+  }
+}
+
+@media only screen and (max-width: 1157px) {
+  .auth-nav {
+    display: block;
   }
 }
 
@@ -211,15 +234,6 @@ body {
     display: flex;
     gap: 40px;
   }
-}
-
-.info-contact {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-
-  color: #434455;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info-contact:hover,
@@ -339,13 +353,22 @@ body {
 }
 
 /* second section */
-.section {
-  padding: 96px 0;
+
+@media only screen and (min-width: 768px), (max-width: 1157px) {
+  .section {
+    padding: 96px 108px;
+  }
 }
 
 @media only screen and (min-width: 1158px) {
   .section {
     padding: 120px 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section {
+    padding: 96px 0;
   }
 }
 
@@ -416,7 +439,7 @@ body {
 .section-tit {
   margin-bottom: 8px;
 
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -424,7 +447,7 @@ body {
 }
 
 .p-team {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -486,6 +509,12 @@ body {
   .p-color {
     margin-bottom: auto;
     font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 627px) {
+  .second-itemli:last-child .p-color {
+    margin-bottom: 0;
   }
 }
 
@@ -899,7 +928,6 @@ body {
   letter-spacing: 0.04em;
   line-height: 1.5;
 
-  opacity: 0.3;
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
