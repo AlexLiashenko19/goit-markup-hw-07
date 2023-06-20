@@ -82,6 +82,7 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0 108px;
   }
 }
 
@@ -215,6 +216,7 @@ body {
 
   .info-contact {
     font-size: 12px;
+    padding-left: 122px;
 
     line-height: 1.1;
 
@@ -357,7 +359,7 @@ body {
 
 @media only screen and (min-width: 768px), (max-width: 1157px) {
   .section {
-    padding: 96px 15px;
+    padding: 96px 0;
   }
 }
 
@@ -1420,7 +1422,6 @@ body {
 
 .mobile-menu .linkus {
   display: block;
-  padding: 10px;
   text-decoration: none;
 }
 
