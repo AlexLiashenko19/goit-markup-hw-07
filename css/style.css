@@ -208,7 +208,7 @@ body {
 }
 
 @media only screen and (max-width: 1157px) {
-  .info-contact:first-child {
+  .auth-item:first-child .info-contact {
     margin-bottom: 12px;
   }
 
@@ -393,7 +393,7 @@ body {
   }
 }
 
-.title {
+.web-studio {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -927,6 +927,7 @@ body {
   font-size: 12px;
   letter-spacing: 0.04em;
   line-height: 1.5;
+  opacity: 0.3;
 
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -937,6 +938,7 @@ body {
 @media only screen and (min-width: 1158px) {
   .mail-line {
     width: 264px;
+    opacity: 1;
   }
 }
 
